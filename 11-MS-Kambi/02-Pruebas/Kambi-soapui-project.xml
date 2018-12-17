@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3a82c4e4-59fc-460b-a3cf-9b4dcc694733" activeEnvironment="Default" name="Kambi" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="364bea22-4ba4-4a87-b19b-41c178892ec2" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://localhost:3000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://localhost:3000</con:endpoint></con:endpoints><con:resource name="Fund" path="/games/kambi/fund" id="ce7e9af3-2d30-42c0-8e64-9d545dab5340"><con:settings/><con:parameters/><con:method name="Caso Exitoso" id="39a2163f-1b45-44fb-ab68-f6ba1785ba28" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:fund="https://localhost/kambi/fund">fund:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500 422</con:status><con:params/><con:element xmlns:fund="https://localhost/kambi/fund">fund:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="DEV" id="1627d514-ea08-4066-a77b-57800336dfb8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:3000</con:endpoint><con:request>{
+  "customerPlayerId" : "8a8f9d61-bb47-11e8-b152-f5fc2265a76d",
+  "kambiTransactionId" : "88d80b4a-fabe-48ca-aa51-5a19e8356bae",
+  "kambiTransactionType" : "STAKE_TRANSACTION_APPROVED_BET",
+  "productType":"SPORTSBOOK",   
+  "currencyCode" : "EUR",
+  "amount" : 15, 
+  "playerSessionToken" : "43",
+  "kambiRewardType" : null,
+  "rewardAmount" : null,
+  "betInformation": {
+        "couponRef" : 133,
+        "type" : "SPORTSBOOK_COUPON_STAKE_ODDS",
+        "channel" : "WEB",       
+        "combinations" : [ {
+            "combinationRef" : 632,
+            "size" : 1,
+            "liveBetting" : true,
+            "odds" : 2.5032,
+            "stake" : 10.00
+        } ]
+    }
+}</con:request><con:originalUri>https://localhost/kambi/fund</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="c469f89a-ec23-431a-8005-5bc5e865511d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.20.50:31178</con:endpoint><con:request>{
+  "customerPlayerId" : "8a8f9d61-bb47-11e8-b152-f5fc2265a76d",
+  "kambiTransactionId" : "88d80b4a-fabe-48ca-aa51-5a19e8356bae",
+  "kambiTransactionType" : "STAKE_TRANSACTION_APPROVED_BET",
+  "productType":"SPORTSBOOK",   
+  "currencyCode" : "EUR",
+  "amount" : 15, 
+  "playerSessionToken" : "43",
+  "kambiRewardType" : null,
+  "rewardAmount" : null,
+  "betInformation": {
+        "couponRef" : 133,
+        "type" : "SPORTSBOOK_COUPON_STAKE_ODDS",
+        "channel" : "WEB",       
+        "combinations" : [ {
+            "combinationRef" : 632,
+            "size" : 1,
+            "liveBetting" : true,
+            "odds" : 2.5032,
+            "stake" : 10.00
+        } ]
+    }
+}</con:request><con:originalUri>https://169.46.20.50/kambi/fund</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Caso Error" id="6a4d5296-8a71-49c4-98c6-db13b81ee653" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404 500 409</con:status><con:params/><con:element xmlns:fund="https://localhost/kambi/fund">fund:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="DEV" id="d38996da-b096-4933-83e7-cf0656004b2b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:3000</con:endpoint><con:request>{
+  "customerPlayerId" : "a8f9d1-bb47-11e8-b152-f5fc2265a76d",
+  "kambiTransactionId" : "88d8b4a-fabe-48ca-aa51-5a19e8356bae",
+  "kambiTransactionType" : "STAKE_TRANSACTION_APPROVED_BET",
+  "productType":"SPORTSBOOK",   
+  "currencyCode" : "EUR",
+  "amount" : 15000, 
+  "playerSessionToken" : "bdb14b77-0211-4007-b1f0-9fefd7070192",
+  "kambiRewardType" : null,
+  "rewardAmount" : null,
+  "betInformation": {
+        "couponRef" : 133,
+        "type" : "SPORTSBOOK_COUPON_STAKE_ODDS",
+        "channel" : "WEB",       
+        "combinations" : [ {
+            "combinationRef" : 632,
+            "size" : 1,
+            "liveBetting" : true,
+            "odds" : 2.5032,
+            "stake" : 10.00
+        } ]
+    }
+}</con:request><con:originalUri>https://localhost/kambi/fund</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="aa8b6e72-aeb4-4082-b9c8-a141b3aeff9e" mediaType="application/json"><con:settings/><con:endpoint>https://localhost:3000</con:endpoint><con:parameters/></con:request></con:method></con:resource><con:resource name="Withdraw" path="/games/kambi/withdraw" id="8460d22f-c9d5-43d4-ae74-2013965377f2"><con:settings/><con:parameters/><con:method name="Caso Exitoso" id="e6ef1fcc-bd3b-484e-9ede-0e7f468ff4e9" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:wit="https://localhost/kambi/withdraw">wit:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="DEV" id="e57dd589-dc72-4913-9672-484928c1e697" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:3000</con:endpoint><con:request>{
+  "customerPlayerId" : "8a8f9d61-bb47-11e8-b152-f5fc2265a76d",
+  "kambiTransactionId" : "88d80b4a-fabe-48ca-aa51-5a19e8356bae",
+  "kambiTransactionType" : "SETTLEMENT_CORRECTION_WITHDRAWAL",
+  "productType":"SPORTSBOOK", 
+  "currencyCode" : "EUR",
+  "amount" : 10,
+  "betInformation" : {
+        "couponRef" : 383,
+        "type":"SPORTSBOOK_COMBINATION",
+        "combinationRefs" : [1234]
+  }
+}</con:request><con:originalUri>https://localhost/kambi/withdraw</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="97fd1561-44f2-4ee9-a39f-210b14579781" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.20.50:31178</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Caso Error" id="8b7fedfc-f7f4-476b-81a6-7fe8833e21bc" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:wit="https://localhost/kambi/withdraw">wit:Fault</con:element></con:representation><con:request name="DEV" id="5269037d-10d8-4f0b-836d-695403ec67c2" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:3000</con:endpoint><con:request>{
+  "customerPlayerId" : "d61-b47-11e8-b152-f5fc2265a76d",
+  "kambiTransactionId" : "88d8-fabe-48ca-aa51-5a19e8356bae",
+  "kambiTransactionType" : "SETTLEMENT_CORRECTION_WITHDRAWAL",
+  "productType":"SPORTSBOOK", 
+  "currencyCode" : "EUR",
+  "amount" : 10,
+  "betInformation" : {
+        "couponRef" : 383,
+        "type":"SPORTSBOOK_COMBINATION",
+        "combinationRefs" : [1234]
+  }
+}</con:request><con:originalUri>https://localhost/kambi/withdraw</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="6276a553-87c1-47eb-8f67-6e754910105e" mediaType="application/json"><con:settings/><con:endpoint>https://localhost:3000</con:endpoint><con:parameters/></con:request></con:method></con:resource><con:resource name="Cancel" path="/games/kambi/cancel" id="2ef35f52-2cf2-4bfb-83ef-35513a07cef2"><con:settings/><con:parameters/><con:method name="Caso Exitoso" id="1f1b2619-97d5-4963-8f80-783fd4b3e4f4" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:can="https://localhost/kambi/cancel">can:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:can="https://localhost/kambi/cancel">can:Response</con:element></con:representation><con:request name="DEV" id="762ffb0f-88b6-48f1-af17-de7099a5b99e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:3000</con:endpoint><con:request>{
+  "customerPlayerId" : "8a8f9d61-bb47-11e8-b152-f5fc2265a76d",
+  "kambiTransactionId" : "88d80b4a-fabe-48ca-aa51-5a19e8356bae",
+  "kambiTransactionType" : "CANCEL_UNFUNDED_COUPON",
+  "transactionToCancel" : "158"    
+}</con:request><con:originalUri>https://localhost/kambi/cancel</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="c8db5597-f32f-40f1-b83c-c4a04a50a80b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.20.50:31178</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Caso Error" id="bf9a443a-b184-46c9-9413-06c332f35e3f" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:can="https://localhost/kambi/cancel">can:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="DEV" id="3670e52c-aa1a-424f-9d70-1279d837c279" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:3000</con:endpoint><con:request>{
+  "customerPlayerId" : "8a8f9d61-bb47-11e8-b152-f5fc2265a76d",
+  "kambiTransactionId" : "88d80b4a-fabe-48ca-aa51-5a19e8356bae",
+  "kambiTransactionType" : "CANCEL_UNFUNDED_COUPON",
+  "transactionToCancel" : "73"    
+}</con:request><con:originalUri>https://localhost/kambi/cancel</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="9fa4ac3f-97c7-46a5-a57e-7346ee37883b" mediaType="application/json"><con:settings/><con:endpoint>https://localhost:3000</con:endpoint><con:parameters/></con:request></con:method></con:resource><con:resource name="Accept" path="/games/kambi/accept" id="bf997456-83ea-4961-b2ed-cd61fc38aeeb"><con:settings/><con:parameters/><con:method name="Caso Exitoso" id="1e2cf450-b554-495c-8e1a-52d9f3e55643" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:acc="https://localhost/games/kambi/accept">acc:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="DEV" id="43a74eb6-01c6-46a5-82ef-184df38eed56" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:3000</con:endpoint><con:request>{
+  "customerPlayerId" : "8a8f9d61-bb47-11e8-b152-f5fc2265a76d",
+  "kambiTransactionId" : "88d80b4a-fabe-48ca-aa51-5a19e8356bae",
+  "kambiTransactionType" : "ACCEPT_COUPON_NOTIFICATION",
+  "productType":"SPORTSBOOK",
+  "betInformation": {
+        "couponRef" : 133,
+        "type" : "SPORTSBOOK_COUPON_STAKE_ODDS",
+        "channel" : "WEB",
+        "combinations" : [ {
+            "combinationRef" : 632,
+            "size" : 1,
+            "liveBetting" : true,
+            "odds" : 2.1303,
+            "stake" : 10.00
+        } ]
+    }
+}</con:request><con:originalUri>https://localhost/games/kambi/accept</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="9fdbd963-3ac9-4d29-9450-c09cb53d6613" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>https://169.46.20.50:31178</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Caso Error" id="54e9812f-7e59-451c-8c59-6d75ce4fd47a" method="POST"><con:settings/><con:parameters/><con:request name="DEV" id="7aff1af6-85c2-47a4-a2ba-a2a0828f83e7" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>https://localhost:3000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="332a54cc-ea1e-4a91-b6ce-20a6ef8c7b59" mediaType="application/json"><con:settings/><con:endpoint>https://localhost:3000</con:endpoint><con:parameters/></con:request></con:method></con:resource><con:resource name="Close" path="/games/kambi/close" id="09af1411-76f6-45cf-8e59-376d3c87cc35"><con:settings/><con:parameters/><con:method name="Caso Exitoso" id="f47f79e2-05c2-4fa6-8767-fac074968d3e" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:clos="https://localhost/games/kambi/close">clos:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:clos="https://localhost/games/kambi/close">clos:Response</con:element></con:representation><con:request name="DEV" id="392c6fe5-69fe-4ade-8a81-9daede7f9d2d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:3000</con:endpoint><con:request>{
+  "customerPlayerId" : "8a8f9d61-bb47-11e8-b152-f5fc2265a76d",
+  "kambiTransactionId" : "88d80b4a-fabe-48ca-aa51-5a19e8356bae",
+  "kambiTransactionType" : "CLOSE_LOST_BET",
+  "productType":"SPORTSBOOK",
+  "betInformation" : {
+        "couponRef" : 383,
+        "type":"SPORTSBOOK_COMBINATION",
+        "combinationRefs" : [1234]
+  }
+}</con:request><con:originalUri>https://localhost/games/kambi/close</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="ce7fae2b-8d29-4572-8ee3-db87aae03aa4" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.20.50:31178</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Caso Error" id="bf109798-f390-471e-abf4-c97886acc20e" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:clos="https://localhost/games/kambi/close">clos:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="DEV" id="57e058e6-3ba6-4712-bbef-c2ca0d824136" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:3000</con:endpoint><con:request>{
+  "customerPlayerId" : "8a8f9d61-bb47-11e8-b152-f5fc2265a76d",
+  "kambiTransactionId" : "88d80b4a-fabe-48ca-aa51-5a19e8356bae",
+  "kambiTransactionType" : "CLOSE_LOST_BET",
+  "productType":"SPORTSBOOK",
+  "betInformation" : {
+        "couponRef" : 383,
+        "type":"SPORTSBOOK_COMBINATION",
+        "combinationRefs" : [1234]
+  }
+}</con:request><con:originalUri>https://localhost/games/kambi/close</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="6d6df69a-b959-479a-b6c1-6425741fbf3d" mediaType="application/json"><con:settings/><con:endpoint>https://localhost:3000</con:endpoint><con:parameters/></con:request></con:method></con:resource><con:resource name="Auth" path="/games/kambi/authenticate" id="9ea4dc67-692a-4177-868d-8660be2e4afb"><con:settings/><con:parameters/><con:method name="Caso Exitoso" id="daa3b679-e60b-454a-8a53-b9c844324606" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:aut="https://localhost/games/kambi/authenticate">aut:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:aut="https://localhost/games/kambi/authenticate">aut:Fault</con:element></con:representation><con:request name="DEV" id="01f018c2-5c5d-4c22-a768-ca70a289d453" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value=".eyJpZCI6IjUxZjZhZWUxLWI4NmMtMTFlOC04NzBmLTA1ZWU4ZWJhZDI3NyIsImlkVGVybXMiOjM1LCJpYXQiOjE1NDE1OTk4ODIsImV4cCI6MTU0MTY4NjI4Mn0.ALYYlBkKwNy19WychoWNyf2AKoCgV_OhLuseA8Cqptps0iXUAw1bu1Cqc-ZGvX5hRhCDdbZS0iqtzRoH5WL5AG9ktB8vh5h7b7BRlJmX1c3K_J6zAB88cUGLWST_j8P8QCz4_cuHgTTuZ0jPgCYdwcPCRLmv1b6ivyuOZdtiCLXOb66qV8cDru-LwWuxGERL_DnCQgeTZJjuSa7HKYOlweNhOTCkuTkBBzY_THYhVkA05Iup8VxeOwcZ0kmOVXwRzmgono1p90nAkEfj9yGkAFdknq9lZclNJNPXXom5b_kkHB5uYQdtDy06hv35toC_rFc2MbEZynYkczLuyaTMrg" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://localhost:3000</con:endpoint><con:request/><con:originalUri>https://localhost/games/kambi/authenticate</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="1bf5c90d-5505-401e-81fd-1ba409a1ea2b" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>https://169.46.20.50:31178</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Caso Error" id="d4dd55d2-f2fa-4ef2-a61a-5d4cfc0a7fde" method="POST"><con:settings/><con:parameters/><con:request name="DEV" id="9c8dd938-6aac-4ebe-8f30-ed550472e697" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:3000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="5390d1de-e902-4736-9f65-699f42cbea7f" mediaType="application/json"><con:settings/><con:endpoint>https://localhost:3000</con:endpoint><con:parameters/></con:request></con:method></con:resource><con:resource name="InformRegistration" path="/games/kambi//inform-registration" id="a8c7a7ad-5ee7-4bc0-b047-d010ad1e34d4"><con:settings/><con:parameters/><con:method name="Caso Exitoso" id="345eda3e-f799-4d76-bee7-e19f8ad4bf70" method="POST"><con:settings/><con:parameters/><con:request name="DEV" id="f841a253-8720-4df8-bdfd-1c7b180cf58a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.20.50:31178</con:endpoint><con:request>{
+    "ticket": 43
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="0cb1f9c1-ac79-46fc-99f9-058579cb71d4" mediaType="application/json"><con:settings/><con:endpoint>https://localhost:3000</con:endpoint><con:parameters/></con:request></con:method><con:method name="Caso Error" id="7b570276-52f8-4c27-bef1-d7617485c5a5" method="POST"><con:settings/><con:parameters/><con:request name="DEV" id="b3dc8fb6-16ab-4793-be3c-450a1e075a88" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>https://localhost:3000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="29f4313d-9aa7-47e2-af08-f284c8e83631" mediaType="application/json"><con:settings/><con:endpoint>https://localhost:3000</con:endpoint><con:parameters/></con:request></con:method></con:resource><con:resource name="Deposit" path="/games/kambi/deposit" id="e3e4c952-7212-4253-9dcd-4177c1809d91"><con:settings/><con:parameters/><con:method name="Caso Exitoso" id="0a01ddc4-881c-4d0a-9194-026974d65dba" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:request name="DEV" id="14c8381d-6012-4c2d-a90b-002e73ec6d32" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:3000</con:endpoint><con:request>{
+  "customerPlayerId" : "8a8f9d61-bb47-11e8-b152-f5fc2265a76d",
+  "kambiTransactionId" : "88d80b4a-fabe-48ca-aa51-5a19e8356bae",
+  "kambiTransactionType" : "PAYOUT_SETTLED_BET_DEPOSIT",
+  "productType":"SPORTSBOOK",
+  "currencyCode" : "EUR",
+  "amount" : 10,
+  "betInformation" : {
+        "couponRef" : 383,
+        "type":"SPORTSBOOK_COMBINATION",
+        "combinationRefs" : [1234]
+  }
+}</con:request><con:originalUri>https://localhost/games/kambi//deposit</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="17e79e5e-7e65-49f3-9193-02eb081c7427" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.20.50:31178</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Caso Error" id="3abe70fc-773b-4bf2-bc58-1a06d82b30a9" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:dep="https://localhost/games/kambi/deposit">dep:Fault</con:element></con:representation><con:request name="DEV" id="949e3417-418d-476c-ae02-d2dbe6c741bc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:3000</con:endpoint><con:request>{
+  "customerPlayerId" : "a8a8f9d61-bb47-11e8-b152-f5fc2265a76d",
+  "kambiTransactionId" : "88d80b4a-fabe-48ca-aa51-5a19e8356bae",
+  "kambiTransactionType" : "PAYOUT_SETTLED_BET_DEPOSIT",
+  "productType":"SPORTSBOOK",
+  "currencyCode" : "EUR",
+  "amount" : 10,
+  "betInformation" : {
+        "couponRef" : 383,
+        "type":"SPORTSBOOK_COMBINATION",
+        "combinationRefs" : [1234]
+  }
+}</con:request><con:originalUri>https://localhost/games/kambi/deposit</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="QA" id="cbc3b12f-46dc-4085-bbac-c44ee47b079a" mediaType="application/json"><con:settings/><con:endpoint>https://localhost:3000</con:endpoint><con:parameters/></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

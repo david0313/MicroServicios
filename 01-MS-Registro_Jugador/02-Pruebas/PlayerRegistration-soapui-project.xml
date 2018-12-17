@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e0ac74ce-98f8-44c3-b63d-3c2a861f3677" activeEnvironment="Default" name="PlayerRegistration" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="495b801b-01a6-4944-b477-b26495ce49c2" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://localhost:3000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://169.46.74.61:31598</con:endpoint><con:endpoint>https://192.168.0.62:31001</con:endpoint><con:endpoint>https://localhost:3000</con:endpoint></con:endpoints><con:resource name="PlayerRegistration" path="/accounts/playerRegistration" id="6b18ad16-f32b-4033-9c25-c2a0649cfe32"><con:settings/><con:parameters/><con:method name="PlayerRegistration" id="f8d0d5c2-8e22-49e3-a0f3-6f8ac554bd65" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>422 409 500</con:status><con:params/><con:element xmlns:play="https://localhost/accounts/playerRegistration">play:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:play="https://192.168.0.62/accounts/playerRegistration">play:Response</con:element></con:representation><con:request name="Caso 1: Operación Exitosa" id="c97d69fa-5bd3-4c1c-8998-03b14e79b607" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.74.61:31598</con:endpoint><con:request>{
+   "userName": "scastillo43",
+  "firstName": "Juan",
+  "firstName2": "",
+  "lastName": "Perez",
+  "lastName2": "Castro",
+  "email": "scastillo6@assist.com.co",
+  "gender": "1",
+  "birthDate": "1999-09-1",
+  "countryOfBirth": "CO",
+  "birthDepartment":"5",
+  "cityOfBirth": "1",
+  "documentDateIssued": "1980-05-16",
+  "documentDateExpired": "1980-05-16",
+  "nationality": "CO",
+  "dpto_exp_doc":"5",
+  "mpio_exp_doc":"1",
+  "mobilePhoneCountryCode": "+57",
+  "phone":"3501927345",
+  "address": "calle 102 # 11-32",
+  "countryAddress":"CO",
+  "departmentAddress":"5",
+  "cityAddress":"1",
+  "addrPostCode": "11111",
+  
+  "language": "8",
+  "currency": "7",
+  "metadataCuenta":"",
+  
+  "documentNumber": "11111341",
+  "documentType": "3",
+  "password": "123456",
+  
+  "acceptsReceivingEmails": "true",
+  "acceptsTerms":"true",
+  "acceptDataProtection":"true",
+  
+  "monthlyRefillLimit":"18000000",
+  "weeklyRechargeLimit":"9000000",
+  "dailyRechargeLimit":"3600000",
+  
+  
+  "monthlyBetLimit":"18000000",
+  "weeklyBetLimit":"9000000",
+  "dailyBetLimit":"3600000",
+  
+  "securityQuestion":"1",
+  "securityQuestionAnswer":"gatito"
+  
+  
+  
+  
+    
+}</con:request><con:originalUri>https://localhost/accounts/playerRegistration</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Caso 2: Datos incompletos" id="c97d69fa-5bd3-4c1c-8998-03b14e79b607" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.74.61:31598</con:endpoint><con:request>{
+  
+  "firstName2": "",
+  "lastName": "Perez",
+  "lastName2": "Castro",
+  "email": "scastillo6@assist.com.co",
+ 
+  "countryOfBirth": "CO",
+  "birthDepartment":"5",
+  "cityOfBirth": "1",
+  "documentDateIssued": "1980-05-16",
+  "documentDateExpired": "1980-05-16",
+  "nationality": "CO",
+  "dpto_exp_doc":"5",
+  "mpio_exp_doc":"1",
+  "mobilePhoneCountryCode": "+57",
+  "phone":"3501927345",
+  "address": "calle 102 # 11-32",
+  "countryAddress":"CO",
+  "departmentAddress":"5",
+  "cityAddress":"1",
+  "addrPostCode": "11111",
+  
+  "language": "8",
+  "currency": "7",
+  "metadataCuenta":"",
+  
+  "documentNumber": "11111341",
+  "documentType": "3",
+  "password": "123456",
+  
+  "acceptsReceivingEmails": "true",
+  "acceptsTerms":"true",
+  "acceptDataProtection":"true",
+  
+  "monthlyRefillLimit":"18000000",
+  "weeklyRechargeLimit":"9000000",
+  "dailyRechargeLimit":"3600000",
+  
+  
+  "monthlyBetLimit":"18000000",
+  "weeklyBetLimit":"9000000",
+  "dailyBetLimit":"3600000",
+  
+  "securityQuestion":"1",
+  "securityQuestionAnswer":"gatito"
+  
+  
+  
+  
+    
+}</con:request><con:originalUri>https://localhost/accounts/playerRegistration</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="partial_validations" path="/accounts/partial_validations" id="434470a4-760c-44b8-b7aa-e1d773d7a9d6"><con:settings/><con:parameters/><con:method name="partial_validations" id="475c49a1-0dc0-4f41-bad2-19732db04d82" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:par="https://localhost/accounts/partial_validations">par:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>409</con:status><con:params/><con:element xmlns:par="https://192.168.0.62/accounts/partial_validations">par:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Caso 1: Operación exitosa" id="8e0fa087-2134-4174-baba-a43d0fc4eaef" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.74.61:31598</con:endpoint><con:request>{
+   "userName": "scastillo",
+  "firstName": "Juan",
+  "firstName2": "",
+  "lastName": "Perez",
+  "lastName2": "Castro",
+  "email": "scastillo@assist.com.co",
+  "gender": "1",
+  "birthDate": "1999-09-1",
+  "countryOfBirth": "CO",
+  "birthDepartment":"5",
+  "cityOfBirth": "1",
+  "documentDateIssued": "1980-05-16",
+  "documentDateExpired": "1980-05-16",
+  "nationality": "CO",
+  "dpto_exp_doc":"5",
+  "mpio_exp_doc":"1",
+  "mobilePhoneCountryCode": "+57",
+  "phone":"3501927345",
+  "address": "calle 102 # 11-32",
+  "countryAddress":"CO",
+  "departmentAddress":"5",
+  "cityAddress":"1",
+  "addrPostCode": "11111",
+  
+  "language": "8",
+  "currency": "7",
+  "metadataCuenta":"",
+  
+  "documentNumber": "11111",
+  "documentType": "3",
+  "password": "123456",
+  
+  "acceptsReceivingEmails": "true",
+  "acceptsTerms":"true",
+  "acceptDataProtection":"true",
+  
+  "monthlyRefillLimit":"18000000",
+  "weeklyRechargeLimit":"9000000",
+  "dailyRechargeLimit":"3600000",
+  
+  
+  "monthlyBetLimit":"18000000",
+  "weeklyBetLimit":"9000000",
+  "dailyBetLimit":"3600000",
+  
+  "securityQuestion":"1",
+  "securityQuestionAnswer":"gatito"
+  
+  
+  
+  
+
+
+  
+    
+}</con:request><con:originalUri>https://localhost/accounts/partial_validations</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Caso 2: Datos incompletos" id="8e0fa087-2134-4174-baba-a43d0fc4eaef" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.74.61:31598</con:endpoint><con:request>{
+
+  "acceptsReceivingEmails": "true",
+  "acceptsTerms":"true",
+  "acceptDataProtection":"true",
+  
+  "monthlyRefillLimit":"18000000",
+  "weeklyRechargeLimit":"9000000",
+  "dailyRechargeLimit":"3600000",
+  
+  
+  "monthlyBetLimit":"18000000",
+  "weeklyBetLimit":"9000000",
+  "dailyBetLimit":"3600000",
+  
+  "securityQuestion":"1",
+  "securityQuestionAnswer":"gatito"
+  
+ 
+}</con:request><con:originalUri>https://localhost/accounts/partial_validations</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="activatePlayerAccount" path="/accounts/activatePlayerAccount" id="89b92080-7462-48af-bddc-fe6117838b9a"><con:settings/><con:parameters/><con:method name="activatePlayerAccount" id="bebe0b3e-8d62-4d2b-acb0-9f3275a5f79a" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:act="https://localhost/accounts/activatePlayerAccount">act:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:act="https://192.168.0.62/accounts/activatePlayerAccount">act:Response</con:element></con:representation><con:request name="Caso 1: Operación exitosa" id="f0b05532-07cd-432e-8765-d0580458c609" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.74.61:31598</con:endpoint><con:request>{
+	"activationCode": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyYmM3NGQxLWUxZGUtMTFlOC1hMjA4LTMzMTNkMmY0MjRlOSIsImlhdCI6MTU0MTUyMDQ1NSwiZXhwIjoxNTQxNjA2ODU1fQ.VYpu6EaPsU73qcW5uuuhCOD98HktQGTPwt-33AcCsf6S8uGtvCSywj6H4iISMCpv1pk4HroZa6roaTFOE17L89v2UxKgUgVUCnqJVGdT2iUmntQXCSOHZGRv8xKNIgsx8VN5jwa-MjAIlcGYD9pDaKXKyJ2PDHhcjvHf8AHNlFQ_7Ju2GczrSn7kBkUbS8C4h2o8sdbzhJBFtob43IcX1Yco9TDEXmYcyvZuRC1jk5HiaAeFW_eMxBXBHgXOZJ_QyB3WZpYjKxWi5nk6jEwSVGsEkcInZax3gl25P8QldbFT6VkzCJB0Z6LdeP0DQPrgi8iZlr804zuxLav-VzhDBg"
+}</con:request><con:originalUri>https://localhost/accounts/activatePlayerAccount</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Caso 2: Codigo invalido" id="f0b05532-07cd-432e-8765-d0580458c609" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.74.61:31598</con:endpoint><con:request>{
+	"activationCode": "CJ9.eyJpZOC1hMjA4LTMzMTNkMmY0MjRlOSIsImlhdCI6MTU0MTUyMDQ1NSwiZXhwIjoxNTQxNjA2ODU1fQ.VYpu6EaPsU73qcW5uuuhCOD98HktQGTPwt-33AcCsf6S8uGtvCSywj6H4iISMCpv1pk4HroZa6roaTFOE17L89v2UxKgUgVUCnqJVGdT2iUmntQXCSOHZGRv8xKNIgsx8VN5jwa-MjAIlcGYD9pDaKXKyJ2PDHhcjvHf8AHNlFQ_7Ju2GczrSn7kBkUbS8C4h2o8sdbzhJBFtob43IcX1Yco9TDEXmYcyvZuRC1jk5HiaAeFW_eMxBXBHgXOZJ_QyB3WZpYjKxWi5nk6jEwSVGsEkcInZax3gl25P8QldbFT6VkzCJB0Z6LdeP0DQPrgi8iZlr804zuxLav-VzhDBg"
+}</con:request><con:originalUri>https://localhost/accounts/activatePlayerAccount</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="userName Available" path="/accounts/userNameAvailable/{userName}" id="d2077a93-7461-43a3-8049-ad866c2fb437"><con:settings/><con:parameters><con:parameter><con:name>userName</con:name><con:value>scastillo11</con:value><con:style>TEMPLATE</con:style><con:default>scastillo11</con:default></con:parameter></con:parameters><con:method name="userName Available" id="072e87dc-9e47-4fcf-8d4d-4e5f90607de5" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>409 500</con:status><con:params/><con:element xmlns:scas="https://localhost/accounts/userNameAvailable/scastillo">scas:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:scas="https://localhost/accounts/userNameAvailable/scastillo">scas:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Caso 1: Operación exitosa" id="33485f72-8317-49f1-9f39-9c5451372266" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.74.61:31598</con:endpoint><con:request/><con:originalUri>https://localhost/accounts/userNameAvailable/scastillo</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="userName" value="scastillo11" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>userName</con:entry></con:parameterOrder></con:request><con:request name="Caso 2:  Usuario no disponible" id="33485f72-8317-49f1-9f39-9c5451372266" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.74.61:31598</con:endpoint><con:request/><con:originalUri>https://localhost/accounts/userNameAvailable/scastillo</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="userName" value="scastillo" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>userName</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="email Available" path="/accounts/emailAvailable/{correo}" id="c254e1ce-d871-47bf-b1cb-2bc10cad10de"><con:settings/><con:parameters><con:parameter><con:name>correo</con:name><con:value>admin@assist.com.co</con:value><con:style>TEMPLATE</con:style><con:default>admin@assist.com.co</con:default></con:parameter></con:parameters><con:method name="email Available" id="e1261537-ff6a-44ed-b010-c864bfe9c0e5" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>409 500</con:status><con:params/><con:element xmlns:scas="https://localhost/accounts/emailAvailable/scastillo@assist.com.co">scas:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:scas="https://localhost/accounts/emailAvailable/scastillo@assist.com.co">scas:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404 500</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Caso 1: Operación exitosa" id="a76fba38-47f9-4eb1-b704-11c263f6400b" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.74.61:31598</con:endpoint><con:request/><con:originalUri>https://localhost/accounts/emailAvailable/scastillo@assist.com.co</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="correo" value="scastillo3@assist.com.co" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>correo</con:entry></con:parameterOrder></con:request><con:request name="Caso 2: Email no disponible" id="a76fba38-47f9-4eb1-b704-11c263f6400b" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://169.46.74.61:31598</con:endpoint><con:request/><con:originalUri>https://localhost/accounts/emailAvailable/scastillo@assist.com.co</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>correo</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
